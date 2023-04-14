@@ -8,7 +8,7 @@
 	<div class="flex flex-wrap justify-evenly">
 		{#if data.people}
 			{#each data.people as person}
-				<div class="flex flex-col rounded-md bg-slate-600 p-4 mt-2 w-72">
+				<div class="mt-2 flex w-72 flex-col rounded-md bg-slate-600 p-4">
 					<h1>
 						{person.first_name}
 						{person.last_name}

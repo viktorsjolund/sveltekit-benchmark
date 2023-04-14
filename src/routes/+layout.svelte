@@ -2,9 +2,13 @@
 	import '../app.css';
 </script>
 
-<main class="overflow-hidden flex items-center flex-col h-screen bg-gradient-to-r from-slate-300 via-slate-50 to-slate-300">
-	<nav class="flex w-full items-center shrink-0 grow-0 h-10 justify-center bg-slate-700 border-b border-slate-600">
-		<div class="font-semibold flex gap-4 w-full p-2 md:max-w-2xl">
+<main
+	class="flex h-screen flex-col items-center overflow-hidden bg-gradient-to-r from-slate-300 via-slate-50 to-slate-300"
+>
+	<nav
+		class="flex h-10 w-full shrink-0 grow-0 items-center justify-center border-b border-slate-600 bg-slate-700"
+	>
+		<div class="flex w-full gap-4 p-2 font-semibold md:max-w-2xl">
 			<a href="/">
 				<span>Home</span>
 			</a>
@@ -16,7 +20,9 @@
 			</a>
 		</div>
 	</nav>
-	<div class="overflow-y-auto scrollbar-thin scrollbar-thumb-slate-500 scrollbar-thumb-rounded-md scrollbar-track-slate-300 justify-self-center shadow-xl w-full flex flex-grow bg-slate-200 md:border-x md:border-slate-300 md:max-w-2xl">
+	<div
+		class="flex w-full flex-grow justify-self-center overflow-y-auto overflow-x-clip bg-slate-200 shadow-xl scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-slate-500 scrollbar-thumb-rounded-md md:max-w-2xl md:border-x md:border-slate-300"
+	>
 		<slot />
 	</div>
 </main>

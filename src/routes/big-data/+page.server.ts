@@ -19,6 +19,6 @@ export const load = (async () => {
 	const people = JSON.parse(bigData) as Person[];
 
 	return {
-    people
-  };
+		people
+	};
 }) satisfies PageServerLoad;
