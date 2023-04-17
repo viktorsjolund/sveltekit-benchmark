@@ -1,22 +1,12 @@
 <script lang="ts">
-	import type { PageData } from './$types';
-
-	export let data: PageData;
+	export let data;
 </script>
 
-<div>
-	<div class="flex flex-wrap justify-evenly">
-		{#if data.people}
-			{#each data.people as person}
-				<div class="mt-2 flex w-72 flex-col rounded-md bg-slate-600 p-4">
-					<h1>
-						{person.first_name}
-						{person.last_name}
-					</h1>
-					<span>{person.email}</span>
-					<span>{person.gender}</span>
-				</div>
-			{/each}
-		{/if}
-	</div>
+<div class="w-full">
+	<a href={data.pathname + '/people'}>
+		<div class="flex w-full flex-col bg-slate-600 p-4">
+			<h1 class="text-lg font-bold">People Big Data</h1>
+			<p>A data collection of 1000 fake people</p>
+		</div>
+	</a>
 </div>
